@@ -1,0 +1,47 @@
+<section >
+  <div class=" letra d-flex justify-content-center pt-2">
+      <h1> Métodos Api Rest</h1>
+  </div>
+
+  <!--
+  <div class="flex-column d-flex align-items-center">
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+      <ng-container matColumnDef="nomMetodo">
+        <th mat-header-cell *matHeaderCellDef> Nombre Metodo </th>
+        <td mat-cell *matCellDef="let element"> {{element.nomMetodo}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="descripcion">
+        <th mat-header-cell *matHeaderCellDef> Descripcion </th>
+        <td mat-cell *matCellDef="let element"> {{element.descripcion}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="url">
+        <th mat-header-cell *matHeaderCellDef> Url </th>
+        <td mat-cell *matCellDef="let element"> {{element.url}} </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+  </div>
+  -->
+
+  <div class="container">
+    <mat-card class="example-card" *ngFor="let element of dataSource">
+      <mat-card-title-group>
+        <mat-card-title>{{element.nomMetodo}}</mat-card-title>
+        <mat-card-subtitle>{{element.url}}</mat-card-subtitle>
+      </mat-card-title-group>
+      <mat-card-content>
+        {{element.descripcion}}
+      </mat-card-content>
+    </mat-card>
+  </div>
+</section>
+
+<div class="grid-container" style="text-align:center">
+  <!--CAMBIAR RUTA-->
+<button mat-flat-button routerLink="/" color="primary" style="color:rgb(255, 255, 255) ;">Regresar</button>
+</div>

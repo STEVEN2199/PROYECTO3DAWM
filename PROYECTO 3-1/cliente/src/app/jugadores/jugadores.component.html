@@ -1,0 +1,103 @@
+<div class="grid-container" style="text-align:center;">
+    <h1 style="color: black; font-weight: bold; font-size: 20px">
+        JUGADORES DESTACADOS
+    </h1>
+</div>
+
+
+<div class="grid-container">
+    <mat-card  class = "example-card" *ngFor="let jugador of jugadoresDestacados" >
+      <mat-card-title-group >
+          <mat-card-title > {{jugador.nombreJugador}} </mat-card-title >
+          <mat-card-subtitle > Posicion {{jugador.posicion}}</mat-card-subtitle >
+          <img  mat-card-sm-image  src = "https://2.bp.blogspot.com/-jwsuY2umj5Y/WdLRtQV1GWI/AAAAAAABPhA/iJHatjC3ZywmhxQ5hKhvKAVXHqhAJXo3ACLcBGAs/s1600/Pro%2BEvolution%2BSoccer.png" >
+      </mat-card-title-group >
+      <mat-card-content >
+          <h6>Anota su gol numero {{jugador.numGoles}}</h6>
+          <h6>Aumenta su valor en el mercado a ${{jugador.salario}}</h6>
+          <h6>Edad del jugador: {{jugador.edad}} </h6>
+          <h6>Ranking del jugador acorde a FIFA: {{jugador.id}}</h6>
+      </mat-card-content >
+    </mat-card >
+
+    <!--
+    <mat-card  class = "example-card" >
+        <mat-card-title-group >
+            <mat-card-title > Karim Benzema </mat-card-title >
+            <mat-card-subtitle > Posicion Dc </mat-card-subtitle >
+            <img  mat-card-sm-image  src = "https://material.angular.io/assets/img/examples/shiba2.jpg" >
+        </mat-card-title-group >
+        <mat-card-content >
+            <h6>Anota su gol numero 350</h6>
+            <h6>Aumenta su valor en el mercado a $1800000</h6>
+        </mat-card-content >
+        </mat-card >
+
+        <mat-card  class = "example-card" >
+            <mat-card-title-group >
+                <mat-card-title > Eden Hazard </mat-card-title >
+                <mat-card-subtitle > Posicion Sd </mat-card-subtitle >
+                <img  mat-card-sm-image  src = "https://material.angular.io/assets/img/examples/shiba2.jpg" >
+            </mat-card-title-group >
+            <mat-card-content >
+                <h6>Anota su gol numero 350</h6>
+                <h6>Aumenta su valor en el mercado a $1800000</h6>
+            </mat-card-content >
+            </mat-card >
+
+            <mat-card  class = "example-card" >
+                <mat-card-title-group >
+                    <mat-card-title > Vinicius Jr </mat-card-title >
+                    <mat-card-subtitle > Posicion Exi </mat-card-subtitle >
+                    <img  mat-card-sm-image  src = "https://material.angular.io/assets/img/examples/shiba2.jpg" >
+                </mat-card-title-group >
+                <mat-card-content >
+                    <h6>Anota su gol numero 350</h6>
+                    <h6>Aumenta su valor en el mercado a $1800000</h6>
+                </mat-card-content >
+                </mat-card >
+
+                <mat-card  class = "example-card" >
+                    <mat-card-title-group >
+                        <mat-card-title > Luka Modric </mat-card-title >
+                        <mat-card-subtitle > Posicion Mc </mat-card-subtitle >
+                        <img  mat-card-sm-image  src = "https://material.angular.io/assets/img/examples/shiba2.jpg" >
+                    </mat-card-title-group >
+                    <mat-card-content >
+                        <h6>Anota su gol numero 350</h6>
+                        <h6>Aumenta su valor en el mercado a $1800000</h6>
+                    </mat-card-content >
+                    </mat-card >
+
+
+                    <mat-card  class = "example-card" >
+                        <mat-card-title-group >
+                            <mat-card-title > Casemiro </mat-card-title >
+                            <mat-card-subtitle > Posicion Mcd </mat-card-subtitle >
+                            <img  mat-card-sm-image  src = "https://material.angular.io/assets/img/examples/shiba2.jpg" >
+                        </mat-card-title-group >
+                        <mat-card-content >
+                            <h6>Anota su gol numero 350</h6>
+                            <h6>Aumenta su valor en el mercado a $1800000</h6>
+                        </mat-card-content >
+                        </mat-card >
+
+                        -->
+
+</div>
+<div class="container">
+  <h2>Estrellas Del Fútbol Mundial</h2>
+  <mat-card class="example-card" *ngFor="let img of imgJugadores">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{img.nomJugador}}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image src="{{img.imgJugador}}" alt="Photo of a Shiba Inu">
+  </mat-card>
+</div>
+
+
+<div class="grid-container" style="text-align:center">
+    <!--CAMBIAR RUTA-->
+<button mat-flat-button routerLink="/equipo" color="primary" style="color:rgb(255, 255, 255) ;">Siguiente</button>
+</div>

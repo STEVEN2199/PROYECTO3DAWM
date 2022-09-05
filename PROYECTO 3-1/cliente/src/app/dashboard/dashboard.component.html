@@ -1,0 +1,118 @@
+<div class="grid-container" style="background-color: rgb(255, 255, 255); border-radius: 3px;">
+  <h1 class="mat-h1" style="color:rgb(0, 0, 0) ; font-weight: bold">
+      Los Mejores Equipos Del Mundo
+  </h1>
+</div>
+<div class="grid-container" style="background-color: rgb(0, 0, 0); border-radius: 3px;">
+
+  <mat-card class="example-card">
+    <img mat-card-image src="https://2.bp.blogspot.com/-jwsuY2umj5Y/WdLRtQV1GWI/AAAAAAABPhA/iJHatjC3ZywmhxQ5hKhvKAVXHqhAJXo3ACLcBGAs/s1600/Pro%2BEvolution%2BSoccer.png" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+      <p>
+        FootballNews es un sitio web el cual te muestra
+        información sobre los principales equipos del mundo.
+        Además, puedes ver las últimas estadisticas sobre
+        las principales estrellas del rey de los deportes
+        actualizados en todo momento.
+      </p>
+    </mat-card-content>
+  </mat-card>
+
+   <!--
+  <h3 class="mat-h3" style="color:rgb(255, 255, 255) ;">
+      <mat-icon style="color: rgb(136, 136, 136);">shield</mat-icon>
+      Manchester United
+  </h3>
+  <h3 class="mat-h3" style="color:rgb(255, 255, 255) ;" *ngFor="let equipo of equipos">
+    <mat-icon style="color: rgb(136, 136, 136);">shield</mat-icon>
+    {{equipo.nombreEquipo}}
+  </h3>
+
+
+
+  <h3 class="mat-h3" style="color:white ;">
+      <mat-icon style="color: rgb(136, 136, 136);">shield</mat-icon>
+      Manchester City
+
+  </h3>
+  <h3 class="mat-h3" style="color:white ;">
+      <mat-icon style="color: rgb(136, 136, 136);">shield</mat-icon>
+      Real Madrid
+  </h3>
+  <h3 class="mat-h3" style="color:white ;">
+      <mat-icon style="color: rgb(136, 136, 136);">shield</mat-icon>
+      Barcelona
+  </h3>
+  <h3 class="mat-h3" style="color:white ;">
+      <mat-icon style="color: rgb(136, 136, 136);">shield</mat-icon>
+      Paris Saint Germain
+  </h3>
+  <h3 class="mat-h3" style="color:white ;">
+      <mat-icon style="color: rgb(136, 136, 136);">shield</mat-icon>
+      Bayer Munich
+  </h3>
+  <h3 class="mat-h3" style="color:white ;">
+      <mat-icon style="color: rgb(136, 136, 136);">shield</mat-icon>
+      Juventus
+  </h3>
+  <h3 class="mat-h3" style="color:white ;">
+      <mat-icon style="color: rgb(136, 136, 136);">shield</mat-icon>
+      Inter
+  </h3>
+  <h3 class="mat-h3" style="color:white ;">
+      <mat-icon style="color: rgb(136, 136, 136);">shield</mat-icon>
+      Milan
+  </h3>
+  <h3 class="mat-h3" style="color:white ;">
+      <mat-icon style="color: rgb(136, 136, 136);">shield</mat-icon>
+      Villareal
+  </h3>
+  <h3 class="mat-h3" style="color:white ;">
+      <mat-icon style="color: rgb(136, 136, 136);">shield</mat-icon>
+      Borussia Dortmund
+  </h3>
+  <h3 class="mat-h3" style="color:white ;">
+      <mat-icon style="color: rgb(136, 136, 136);">shield</mat-icon>
+      Bayer Leverkusen
+  </h3>
+  <h3 class="mat-h3" style="color:white ;">
+      <mat-icon style="color: rgb(136, 136, 136);">shield</mat-icon>
+      Atletico Madrid
+  </h3>
+  <h3 class="mat-h3" style="color:white ;">
+      <mat-icon style="color: rgb(136, 136, 136);">shield</mat-icon>
+      Lazio
+  </h3>
+  <h3 class="mat-h3" style="color:white ;">
+      <mat-icon style="color: rgb(136, 136, 136);">shield</mat-icon>
+      Monaco
+  </h3>
+  <h3 class="mat-h3" style="color:white ;">
+      <mat-icon style="color: rgb(136, 136, 136);">shield</mat-icon>
+      Roma
+  </h3>
+  -->
+</div>
+
+<div class="container">
+  <table class="table table-striped table-bordered border-black">
+    <thead class="table-light">
+      <tr>
+        <th scope="col">No.</th>
+        <th scope="col">Nombre Del Equipo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let equipo of equipos">
+        <th scope="row">{{equipo.id}}</th>
+        <td>{{equipo.nombreEquipo}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="grid-container" style="text-align:center">
+  <!--CAMBIAR RUTA-->
+<button mat-flat-button routerLink="/jugadores" color="primary" style="color:rgb(255, 255, 255) ;">Siguiente</button>
+</div>
+

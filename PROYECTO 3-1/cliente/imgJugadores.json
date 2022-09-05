@@ -1,0 +1,63 @@
+[
+	{
+		"id": 1,
+    "nomJugador":"Luka Modric",
+		"imgJugador": "https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt88c2812b616313f3/629382ca188b9a0fa461eff8/Luka.jpg",
+		"idJugador": 1
+	},
+  {
+		"id": 2,
+    "nomJugador":"Cristiano Ronaldo",
+		"imgJugador": "https://fotografias.lasexta.com/clipping/cmsimages01/2020/10/31/96A4304E-990B-47D3-8B5A-A9D88940D7B9/60.jpg",
+		"idJugador": 2
+	},
+  {
+		"id": 3,
+    "nomJugador":"Karim Benzema",
+		"imgJugador": "https://golecuador.ec/wp-content/uploads/2022/05/16505570751332.jpg",
+		"idJugador": 3
+	},
+  {
+		"id": 4,
+    "nomJugador":"Ricardo Kaká",
+		"imgJugador": "https://i2.wp.com/soycalcio.com/wp-content/uploads/2018/09/Kaka.jpg?resize=1080%2C675",
+		"idJugador": 4
+	},
+  {
+		"id": 5,
+    "nomJugador":"kylian Mbappé",
+		"imgJugador": "https://www.sportsmax.tv/media/k2/items/cache/ddf0e8f4d537704d0348194da72d21ae_XL.jpg",
+		"idJugador": 5
+	},
+  {
+		"id": 6,
+    "nomJugador":"Eden Hazard",
+		"imgJugador": "https://www.eluniverso.com/resizer/Fo5j4MbT7Ggo7mN5ewsLUHTAjQQ=/810x444/smart/filters:quality(70)/cloudfront-us-east-1.images.arcpublishing.com/eluniverso/JZFTDJ7MMVEUFFNSHJME62CZTA.jpg",
+		"idJugador": 6
+	},
+  {
+		"id": 7,
+    "nomJugador":"Lionel Messi",
+		"imgJugador": "https://cdnuploads.aa.com.tr/uploads/Contents/2022/01/27/thumbs_b_c_cd7d53840cc64190294b625c10398ac5.jpg?v=150353",
+		"idJugador": 7
+	},
+  {
+		"id": 8,
+    "nomJugador":"Neymar Jr",
+		"imgJugador": "https://img.asmedia.epimg.net/resizer/Dc-Tq_Jg0zVxvG1GgSdpChgFjiY=/1952x1098/filters:focal(269x128:279x138)/cloudfront-eu-central-1.images.arcpublishing.com/diarioas/O7NCRFK2LG3MXH4D5IL2C4L7LY.jpg",
+		"idJugador": 8
+	},
+  {
+		"id": 9,
+    "nomJugador":"Vinicius Jr",
+		"imgJugador": "https://sportsmax.tv/media/k2/items/cache/e5e69b9911994570874a064521d6959b_XL.jpg",
+		"idJugador": 9
+	},
+  {
+		"id": 10,
+    "nomJugador":"Ronaldo Nazario",
+		"imgJugador": "https://images2.minutemediacdn.com/image/fetch/w_2000,h_2000,c_fit/https%3A%2F%2Ffoxesofleicester.com%2Fwp-content%2Fuploads%2Fgetty-images%2F2017%2F07%2F95678174.jpeg",
+		"idJugador": 10
+	}
+
+]

@@ -1,0 +1,127 @@
+<div class="grid-container" style="background-color: rgb(255, 255, 255); border-radius: 3px; text-align: center;">
+    <h1 class="mat-h1" style="color:rgb(0, 0, 0) ;">
+        Estrellas Del Fútbol De Europa
+    </h1>
+    <!--
+    <img src="images/cancha.png" alt="">
+    <img mat-card-sm-image src="/src/app/images/cancha.png" alt="" class="border-light" height="50px">
+    <img src="src\images\cancha.png" class="img-fluid" style="position: absolute; right: 0; top: 0; z-index: -100; opacity: 0.75;">
+    -->
+
+    <!--
+        <mat-card  class = "example-card" >
+    <mat-card-title-group >
+        <mat-card-title > Shiba Inu </mat-card-title >
+        <mat-card-subtitle > Small </mat-card-subtitle >
+        <img  mat-card-sm-image  src = "https://material.angular.io/assets/img/examples/shiba2.jpg" >
+    </mat-card-title-group >
+    <mat-card-content >
+        hola
+    </mat-card-content >
+    </mat-card >
+    -->
+</div>
+<!--TABLA DE JUGADORES EN EQUIPO-->
+<!--
+<div class="grid-container">
+    <mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+        <ng-container matColumnDef="position">
+          <mat-header-cell *matHeaderCellDef> No. </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.position}} </mat-cell>
+        </ng-container>
+
+
+        <ng-container matColumnDef="name">
+          <mat-header-cell *matHeaderCellDef> Nombre </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.name}} </mat-cell>
+        </ng-container>
+
+
+        <ng-container matColumnDef="weight">
+          <mat-header-cell *matHeaderCellDef> Edad </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.weight}} </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="symbol">
+          <mat-header-cell *matHeaderCellDef> Posicion </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.symbol}} </mat-cell>
+        </ng-container>
+
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+      </mat-table>
+
+</div>
+-->
+<!--TABLA DE JUGADORES EN EQUIPO-->
+
+
+
+<!--TABLA DE JUGADORES EN EQUIPO-->
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Dorsal</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Edad</th>
+      <th scope="col">Numero Goles</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let jugador of jugadores" ng-repeat="jugador in jugadores | filter:filtro as resultado">
+      <th scope="row">{{jugador.id}}</th>
+      <td>{{jugador.author.firstName}} {{jugador.author.lastName}}</td>
+      <td>{{jugador.edad}}</td>
+      <td>{{jugador.numGoles}}</td>
+    </tr>
+  </tbody>
+</table>
+<!--
+<div class="grid-container">
+  <table mat-table class="mat-elevation-z8" *ngFor="let jugador of jugadores">
+
+      <ng-container matColumnDef="position">
+        <th mat-header-cell *matHeaderCellDef> No. </th>
+        <td mat-cell > {{jugador.id}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> Name </th>
+        <td mat-cell > {{jugador.author.firstName}} {{jugador.author.lastName}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="weight">
+        <th mat-header-cell *matHeaderCellDef> Edad </th>
+        <td mat-cell > {{jugador.edad}} </td>
+      </ng-container>
+
+
+      <ng-container matColumnDef="symbol">
+        <th mat-header-cell *matHeaderCellDef> Numero Goles </th>
+        <td mat-cell > {{jugador.numGoles}} </td>
+      </ng-container>
+
+      <tr mat-header-row ></tr>
+      <tr mat-row></tr>
+    </table>
+
+</div>
+-->
+<!--TABLA DE JUGADORES EN EQUIPO-->
+
+<div class="grid-container" style="text-align:center">
+    <!--CAMBIAR RUTA-->
+<button mat-flat-button routerLink="/" color="primary" style="color:rgb(255, 255, 255) ;">Siguiente</button>
+</div>
+
+
+<!--
+<div class="grid-container">
+    <h1 class="mat-h1">
+        About
+    </h1>
+    <button mat-button routerLink="/" color="primary">Back home</button>
+</div>
+-->
+

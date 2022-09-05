@@ -1,0 +1,49 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+
+      [opened]="(isHandset$ | async) === false">
+
+    <mat-toolbar>Menu</mat-toolbar>
+
+    <mat-nav-list>
+      <a mat-list-item routerLink="/" (click)="drawer.toggle()">Home</a>
+      <!--
+      <a mat-list-item routerLink="/about" (click)="drawer.toggle()">About</a>
+      <a mat-list-item routerLink="/error" (click)="drawer.toggle()">Error</a>
+      -->
+      <a mat-list-item routerLink="/jugadores" (click)="drawer.toggle()">Jugadores</a>
+      <a mat-list-item routerLink="/equipo" (click)="drawer.toggle()">Equipo</a>
+      <a mat-list-item routerLink="/login" (click)="drawer.toggle()">Login</a>
+      <a mat-list-item routerLink="/error" (click)="drawer.toggle()">Jugadores Relacional</a>
+      <a mat-list-item routerLink="/filtro" (click)="drawer.toggle()">Jugadores N.Relacional</a>
+      <a mat-list-item routerLink="/metodos" (click)="drawer.toggle()">Métodos Usados</a>
+    </mat-nav-list>
+
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>FootballNews</span>
+      <span class="spacer"></span>
+      <a mat-button routerLink="/">Home</a>
+      <!--
+      <a mat-button routerLink="/about">About</a>
+      <a mat-button routerLink="/error">Error</a>
+      -->
+      <a mat-button routerLink="/jugadores">Jugadores</a>
+      <a mat-button routerLink="/equipo">Equipo</a>
+    </mat-toolbar>
+
+    <!-- Add Content Here -->
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

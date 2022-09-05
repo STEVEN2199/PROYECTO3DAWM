@@ -1,0 +1,44 @@
+{
+	"model": {
+		"type": "Object",
+		"value": {
+			"id": {
+				"type": "incrementNumber",
+				"options": {
+					"from": 1
+				}
+			},
+			"fechaNacimiento": {
+				"type": "faker",
+				"value": "date.between",
+				"options": ["1985-01-02", "2002-12-29"]
+			},
+
+			"author": {
+				"type": "Object",
+				"value": {
+					"firstName": {
+						"type": "faker",
+						"value": "name.firstName"
+					},
+					"lastName": {
+						"type": "faker",
+						"value": "name.lastName"
+					}
+				}
+			},
+
+            "numGoles": {
+                "type": "randomNumberBetween",
+                "value": [1, 250]
+              },
+
+              "edad": {
+                "type": "randomNumberBetween",
+                "value": [18, 38]
+              }
+
+
+		}
+	}
+}

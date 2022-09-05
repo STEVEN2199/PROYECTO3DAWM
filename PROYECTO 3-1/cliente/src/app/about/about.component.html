@@ -1,0 +1,67 @@
+<div class="grid-container" style="text-align:center;">
+    <h1 style="color: black; font-weight: bold; font-size: 20px">
+        JUGADORES DESTACADOS
+    </h1>
+</div>
+
+<div class="container">
+  <div class="mat-elevation-z8">
+    <table mat-table [dataSource]="dataSource" matSort>
+
+      <!-- Position Column -->
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef style="padding: 7px" mat-sort-header> Dorsal. </th>
+        <td mat-cell *matCellDef="let element" style="padding: 7px"> {{element.id}} </td>
+      </ng-container>
+
+      <!-- Name Column -->
+      <ng-container matColumnDef="author.firstName">
+        <th mat-header-cell *matHeaderCellDef style="padding: 7px" mat-sort-header> Nombre Jugador </th>
+        <td mat-cell *matCellDef="let element" style="padding: 7px"> {{element.author.firstName}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="author.lastName">
+        <th mat-header-cell *matHeaderCellDef style="padding: 7px" mat-sort-header> Apellido Jugador </th>
+        <td mat-cell *matCellDef="let element" style="padding: 7px"> {{element.author.lastName}} </td>
+      </ng-container>
+
+      <!-- Weight Column -->
+      <ng-container matColumnDef="numGoles">
+        <th mat-header-cell *matHeaderCellDef style="padding: 7px" mat-sort-header> Numero Goles </th>
+        <td mat-cell *matCellDef="let element" style="padding: 7px"> {{element.numGoles}} </td>
+      </ng-container>
+
+      <!-- Symbol Column -->
+      <ng-container matColumnDef="edad">
+        <th mat-header-cell *matHeaderCellDef style="padding: 7px" mat-sort-header> Edad </th>
+        <td mat-cell *matCellDef="let element" style="padding: 7px"> {{element.edad}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="salario">
+        <th mat-header-cell *matHeaderCellDef style="padding: 2px" mat-sort-header> Salario </th>
+        <td mat-cell *matCellDef="let element" style="padding: 2px"> 1200000 </td>
+      </ng-container>
+
+      <!--
+      <ng-container matColumnDef="fechaNacimiento">
+        <th mat-header-cell *matHeaderCellDef style="padding: 7px"> Fecha de Nacimiento </th>
+        <td mat-cell *matCellDef="let element" style="padding: 7px"> {{element.fechaNacimiento}} </td>
+      </ng-container>
+      -->
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns" style="padding: 7px"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;" style="padding: 7px"></tr>
+    </table>
+
+    <mat-paginator [pageSizeOptions]="[3, 5, 10, 15, 20, 30, 40, 50, 100]"
+    style="padding: 2px">
+    </mat-paginator>
+  </div>
+</div>
+
+
+<div class="grid-container" style="text-align:center">
+    <!--CAMBIAR RUTA-->
+<button mat-flat-button routerLink="/" color="primary" style="color:rgb(255, 255, 255) ;">Iniciar</button>
+</div>
+
